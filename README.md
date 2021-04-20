@@ -8,9 +8,8 @@
 </p>
 
 ## Authors
-======================================
+
 - Ashwini Upadhyay - Backend Developer
-======================================
 
 ## About Laravel
 

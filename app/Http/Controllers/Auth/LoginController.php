@@ -33,6 +33,7 @@ class LoginController extends Controller
     {
        /* return $request->only($this->username(), 'password');*/
        return ['email'=>$request->{$this->username()},'password'=>$request->password,'status'=>'1'];
+       
     }
     /**
      * Create a new controller instance.
