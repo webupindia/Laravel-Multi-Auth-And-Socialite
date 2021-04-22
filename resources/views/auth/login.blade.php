@@ -65,6 +65,13 @@
                             </div>
                         </div>
                     </form>
+                      <div class="form-group row">
+                          <div class="col-md-6 offset-md-3 pt-4">
+                            <a href="{{ route('login.google') }}" class="btn btn-danger btn-block">Login With Google</a> 
+                            <a href="{{ route('login.facebook') }}"  class="btn btn-primary btn-block">Login With Facebook</a>
+                            <a href="{{ route('login.github') }}"  class="btn btn-dark btn-block">Login With Github</a> 
+                          </div>
+                        </div>
                 </div>
             </div>
         </div>
