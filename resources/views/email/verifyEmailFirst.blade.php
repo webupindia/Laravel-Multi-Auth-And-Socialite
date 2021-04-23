@@ -1,1 +1,1 @@
-<h1>Verify Email To Active Account</h1>
+<h1>We sent activation code please check your email</h1>

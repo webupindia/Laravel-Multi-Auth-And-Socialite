@@ -87,7 +87,8 @@ class RegisterController extends Controller
     {
        $user = User::where(['email'=>$email,'verifyToken'=>$verifyToken])->first();
        if($user){
-          return User::where(['email'=>$email,'verifyToken'=>$verifyToken])->update(['status'=>'1','verifyToken'=>NULL]);
+          User::where(['email'=>$email,'verifyToken'=>$verifyToken])->update(['status'=>'1','verifyToken'=>NULL]);
+          return redirect()->route('login')->with('success','User Active Successfully');
        }else{
         return 'User Not Found';
        }
@@ -95,6 +96,6 @@ class RegisterController extends Controller
 
   public function verifyEmailFirst()
   {
-    return view('email.verifyEmailFirst');
+    return redirect()->route('login')->with('success','We sent activation code please check your email');
   }  
 }
